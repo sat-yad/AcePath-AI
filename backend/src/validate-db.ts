@@ -1,4 +1,4 @@
-import { db } from './db/client';
+import { query } from './db/client';
 
 async function validateSchema() {
   const tables = [
@@ -12,7 +12,7 @@ async function validateSchema() {
   
   for (const table of tables) {
     try {
-      const res = await db.query(`SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_name = $1)`, [table]);
+      const res = await query(`SELECT EXISTS (SELECT FROM information_schema.tables WHERE table_name = $1)`, [table]);
       const exists = res.rows[0].exists;
       console.log(`${exists ? '✅' : '❌'} Table: ${table}`);
     } catch (err: any) {
@@ -22,7 +22,7 @@ async function validateSchema() {
 
   // Check pgvector
   try {
-    const res = await db.query(`SELECT * FROM pg_extension WHERE extname = 'vector'`);
+    const res = await query(`SELECT * FROM pg_extension WHERE extname = 'vector'`);
     console.log(`${res.rows.length > 0 ? '✅' : '❌'} Extension: pgvector`);
   } catch (err) {
     console.log(`❌ Extension: pgvector (Not installed)`);
