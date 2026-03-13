@@ -1,0 +1,85 @@
+﻿
+> acepath-ai-backend@1.0.0 dev
+> nodemon src/server.ts
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: ts,json[39m
+[32m[nodemon] starting `ts-node src/server.ts`[39m
+npm : E:\FULL-Stack-Proj
+ects\InteviewHelp\backen
+d\node_modules\openai\sr
+c\index.ts:272
+At line:1 char:1
++ npm run dev > 
+server_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : (E:\FULL-Stack-P.   
+ ..rc\index.ts:272:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+      throw new 
+Errors.OpenAIError(
+            ^
+OpenAIError: The 
+OPENAI_API_KEY 
+environment variable is 
+missing or empty; 
+either provide it, or 
+instantiate the OpenAI 
+client with an apiKey 
+option, like new 
+OpenAI({ apiKey: 'My 
+API Key' }).
+    at new OpenAI (E:\FU
+LL-Stack-Projects\Intevi
+ewHelp\backend\node_modu
+les\openai\src\index.ts:
+272:13)
+    at 
+Object.<anonymous> (E:\F
+ULL-Stack-Projects\Intev
+iewHelp\backend\src\agen
+ts\base.agent.ts:5:16)
+    at Module._compile (
+node:internal/modules/cj
+s/loader:1256:14)
+    at 
+Module.m._compile (E:\FU
+LL-Stack-Projects\Intevi
+ewHelp\backend\node_modu
+les\ts-node\src\index.ts
+:1618:23)
+    at 
+Module._extensions..js (
+node:internal/modules/cj
+s/loader:1310:10)
+    at Object.require.ex
+tensions.<computed> [as 
+.ts] (E:\FULL-Stack-Proj
+ects\InteviewHelp\backen
+d\node_modules\ts-node\s
+rc\index.ts:1621:12)
+    at Module.load (node
+:internal/modules/cjs/lo
+ader:1119:32)
+    at 
+Function.Module._load (n
+ode:internal/modules/cjs
+/loader:960:12)
+    at Module.require (n
+ode:internal/modules/cjs
+/loader:1143:19)
+    at require (node:int
+ernal/modules/cjs/helper
+s:110:18)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+

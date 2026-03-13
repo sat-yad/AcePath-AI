@@ -1,0 +1,41 @@
+﻿
+> acepath-ai-frontend@0.1.0 dev
+> next dev
+
+npm :  ΓÜá Port 3000 is 
+in use, trying 3001 
+instead.
+At line:1 char:1
++ npm run dev > 
+frontend_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : ( ΓÜá Port 3000 .   
+ ..g 3001 instead.:S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+  Γû▓ Next.js 14.2.3
+  - Local:        http://localhost:3001
+
+ Γ£ô Starting...
+[Error: EPERM: 
+operation not 
+permitted, open 'E:\FULL
+-Stack-Projects\Inteview
+Help\frontend\.next\trac
+e'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'E:\\FULL-Stack-
+Projects\\InteviewHelp\\
+frontend\\.next\\trace'
+}
+ Γ£ô Ready in 3.5s
+
