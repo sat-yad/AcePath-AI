@@ -241,7 +241,7 @@ function ProgressItem({ title, desc, progress, status, icon }: any) {
         </Badge>
       </div>
       <div className="pl-[52px]">
-        <Progress value={progress} size="sm" color={status === 'Mastered' ? 'bg-gradient-to-r from-emerald-500 to-emerald-400' : 'bg-gradient-to-r from-indigo-600 to-indigo-400'} />
+        <Progress value={progress} size="sm" color={status === 'Mastered' ? 'emerald' : 'indigo'} />
       </div>
     </div>
   );
