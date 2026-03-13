@@ -79,7 +79,7 @@ export abstract class BaseAgent {
          LIMIT $4`,
         [userId, this.agentType, JSON.stringify(embedding), limit]
       );
-      return result.rows.map((r) => r.content);
+      return result.rows.map((r: any) => r.content);
     } catch (err: any) {
       console.error(`[${this.agentType}] Memory retrieval failed:`, err?.message || err);
       return [];
