@@ -20,3 +20,12 @@ frontend/build/
 frontend/.env
 frontend/.env.local
 frontend/*.log
+# Package files
+package.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+backend/package.json
+backend/package-lock.json
+frontend/package.json
+frontend/package-lock.json
